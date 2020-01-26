@@ -6,7 +6,7 @@ def arabic2roman(aNum):
     while aNum > 0:
         for _ in range(aNum//aNums[i]):
             rNum += rNums[i];
-            aNum -= val[i];
+            aNum -= aNums[i];
         i += 1;
     return rNum;
 
