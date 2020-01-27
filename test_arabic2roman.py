@@ -14,7 +14,7 @@ def test_valid():								# Checks values within the valid range
 	
 def test_invalid():
 	assert a.arabic2roman('string') == 'Error'; # Only integers are valid
-	assert a.arabic2roman(True) == 'Error';
+	assert a.arabic2roman(4.2) == 'Error';		# Floating point is invalid
 	assert a.arabic2roman(-1) == 'Error';		# Current function only works with values 1 to 3999
 	assert a.arabic2roman(0) == 'Error';
 	assert a.arabic2roman(4000) == 'Error';
