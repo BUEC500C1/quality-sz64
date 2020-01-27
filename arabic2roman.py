@@ -9,6 +9,6 @@ def arabic2roman(aNum):
 				rNum += rNums[i];
 				aNum -= aNums[i];
 			i += 1;
+		return rNum;
 	else:
 		return 'Error';
-    return rNum;
